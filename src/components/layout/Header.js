@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const headerStyle = {
   textAlign: 'center',
@@ -12,6 +13,7 @@ export default function Header() {
   return (
    <header style={headerStyle}>
      <h1>Task Manager</h1>
+     <Link to="/" style={{color: 'skyblue'}}>Home</Link> | <Link to="/about" style={{color: 'skyblue'}}>About</Link>
    </header>
   )
 }
